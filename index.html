@@ -7,11 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <script src="https://kit.fontawesome.com/f68d03869f.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./css/style.css">
+
   <title>Document</title>
 </head>
 
@@ -29,7 +31,7 @@
             <i class="fa fa-bars" aria-hidden="true"></i>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
+            <div class="navbar-nav ms-lg-120">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
               <a class="nav-link" href="#">Features</a>
               <a class="nav-link" href="#">Gallary</a>
@@ -113,7 +115,7 @@
           </div>
         </div>
         <div class="col-sm-6 col-xl-3 mb-4">
-          <div class="border shadow-lg rounded p-4 h-100">
+          <div class="border shadow-lg rounded p-4 h-10 0">
             <img src="./img/reason2.png" alt="">
             <h4 class="my-4">Friendly interface</h4>
             <p>A hotel booking engine with a good user-friendly.</p>
@@ -221,55 +223,56 @@
           <div class="swiper-slide p-4 px-5 border rounded shadow">
             <img src="./img/client1.png" alt=""><span class="quote"><i class="fa fa-quote-left"
                 aria-hidden="true"></i></span>
-            <p class="mb-3">Lorem ipsum dolor sit amet.</p>
+            <p class="mb-3">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, sed!</p>
             <p class="mb-1">David lee</p>
             <a href="" class="text-secondary">davidlee@</a>
           </div>
           <div class="swiper-slide p-4 px-5 border rounded shadow">
             <img src="./img/client2.png" alt=""><span class="quote"><i class="fa fa-quote-left"
                 aria-hidden="true"></i></span>
-            <p class="mb-3">Lorem ipsum dolor sit amet.</p>
+            <p class="mb-3">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, sed!</p>
             <p class="mb-1">David lee</p>
             <a href="" class="text-secondary">davidlee@</a>
           </div>
           <div class="swiper-slide p-4 px-5 border rounded shadow">
             <img src="./img/client3.png" alt=""><span class="quote"><i class="fa fa-quote-left"
                 aria-hidden="true"></i></span>
-            <p class="mb-3">Lorem ipsum dolor sit amet.</p>
+            <p class="mb-3">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, sed!</p>
             <p class="mb-1">David lee</p>
             <a href="" class="text-secondary">davidlee@</a>
           </div>
           <div class="swiper-slide p-4 px-5 border rounded shadow">
             <img src="./img/client1.png" alt=""><span class="quote"><i class="fa fa-quote-left"
                 aria-hidden="true"></i></span>
-            <p class="mb-3">Lorem ipsum dolor sit amet.</p>
+            <p class="mb-3">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, sed!</p>
             <p class="mb-1">David lee</p>
             <a href="" class="text-secondary">davidlee@</a>
           </div>
         </div>
+        <div class="swiper-pagination"></div>
       </div>
-      <div class="swiper-pagination"></div>
     </div>
   </section>
   <section id="subscribe">
     <div class="container text-center py-4">
       <p class="uptitle">STAY IN TOUCH</p>
       <h2>Join our email. First to know about specials,events and more!</h2>
-      <form action="" class="my-3"><input type="text" placeholder="Enter your email address"><button class="btn btn-primary">Subscribe</button></form>
+      <form class="subscribe-form" action="" class="my-3"><input type="text" placeholder="Enter your email address"><button
+          class="btn btn-primary">Subscribe</button></form>
     </div>
   </section>
   <footer>
-    <div class="container py-4">
+    <div class="container py-4 text-center-md">
       <div class="row align-items-baseline">
         <div class="col-md-6 col-lg-4">
           <img src="./img/logo.png" alt="">
           <p class="text-secondary">Travel deals on hotels, flights, vacation packages.</p>
           <p class="text-sedondary">@shovasatkhira88.com</p>
-          <div class="social-links">
-            <i class="fa fa-facebook" aria-hidden="true"></i>
-            <i class="fa fa-youtube" aria-hidden="true"></i>
-            <i class="fa fa-twitter" aria-hidden="true"></i>
-            <i class="fa fa-google" aria-hidden="true"></i>
+          <div class="social-links fs-4 text-primary">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            <i class="fa-brands fa-twitter" aria-hidden="true"></i>
           </div>
         </div>
         <div class="col-md-2">
@@ -290,12 +293,38 @@
         </div>
         <div class=" col-lg-4">
           <p class="fw-bold">Subscribe</p>
-          <form action=""><input type="text" placeholder="Enter your email address"><button class="btn btn-primary">Subscribe</button></form>
+          <form class="subscribe-form" action=""><input type="text" placeholder="Enter your email address"><button
+              class="btn btn-primary">Subscribe</button></form>
         </div>
       </div>
     </div>
   </footer>
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 50,
+        },
+      },
+    });
+  </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

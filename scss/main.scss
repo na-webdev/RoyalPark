@@ -23,7 +23,7 @@ body {
     background-color: transparent !important;
   }
   .navbar-nav {
-    margin-left: 120px;
+    width: 100%;
   }
 
   .nav-link {
@@ -113,7 +113,11 @@ iframe {
   }
 }
 
+.swiper-wrapper {
+  height: 400px;
+}
 .swiper-slide {
+  padding-top: 80px !important;
   .quote {
     display: block;
     text-align: left;
@@ -123,43 +127,65 @@ iframe {
 }
 
 
-#subscribe {
-
-  form {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
+.subscribe-form {
+  margin-top: 20px !important;
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 10px;
 
   input {
     padding: 15px;
-    border: 0.2px solid rgba(128, 128, 128, 0.349);
     width: 40%;
-
+    min-width: 200px;
+    border: 0.2px solid rgba(128, 128, 128, 0.349);
+    border-right: none;
+    outline:none;
   }
   .btn-primary {
     padding: 15px 40px;
-    border-radius: 0 10px 10px 0;
   }
 }
 
 footer {
-
-  form {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
   li {
     margin-bottom: 20px;
   }
-
-  input {
-    padding: 15px;
-  }
-
-  .btn-primary {
-    padding: 15px 40px;
+  form {
+    width: fit-content !important;
   }
 }
 
+.social-links {
+  i {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .navbar-nav {
+    background-color: #ECE7E2;
+    margin-top: -40px;
+    text-align: center;
+
+  }
+  .subscribe-form {
+    border: none;
+    align-items: center;
+    gap: 20px;
+    input {
+      border: 0.2px solid rgba(128, 128, 128, 0.349);
+    }
+  }
+
+  footer {
+    text-align: center;
+    .fw-bold {
+      margin-top: 20px;
+    }
+
+    margin-bottom: 40px;
+  }
+}
